@@ -24,16 +24,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/marsgis/mars3d-simple-vue.git"
+    "url": "https://github.com/muyao1987/web-proxy.git"
   },
   "bugs": {
-    "url": "https://github.com/marsgis/mars3d-simple-vue/issues",
+    "url": "https://github.com/muyao1987/web-proxy/issues",
     "email": "wh@marsgis.cn"
   },
   "author": {
-    "name": "火星科技",
+    "name": "火星科技 木遥",
     "url": "http://www.marsgis.cn"
   },
   "license": "ISC",
-  "homepage": "https://github.com/marsgis/mars3d-simple-vue"
+  "homepage": "https://github.com/muyao1987/web-proxy"
 }
