@@ -4,11 +4,9 @@
   "description": "web代理服务器，进行跨域处理解决",
   "main": "server.js",
   "keywords": [
-    "marsgis",
-    "mars3d",
-    "cesium",
-    "vue",
-    "gis"
+    "proxy",
+    "web",
+    "cors" 
   ],
   "scripts": {
     "serve": "node server.js --public",
