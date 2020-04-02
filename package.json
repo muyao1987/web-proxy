@@ -1,0 +1,39 @@
+{
+  "name": "web-proxy",
+  "version": "1.2.0",
+  "description": "web代理服务器，进行跨域处理解决",
+  "main": "server.js",
+  "keywords": [
+    "marsgis",
+    "mars3d",
+    "cesium",
+    "vue",
+    "gis"
+  ],
+  "scripts": {
+    "serve": "node server.js --public",
+    "dev": "node server.js --public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "compression": "^1.7.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.2",
+    "request": "^2.79.0",
+    "yargs": "^10.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marsgis/mars3d-simple-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marsgis/mars3d-simple-vue/issues",
+    "email": "wh@marsgis.cn"
+  },
+  "author": {
+    "name": "火星科技",
+    "url": "http://www.marsgis.cn"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/marsgis/mars3d-simple-vue"
+}
