@@ -5,8 +5,7 @@
     var compression = require('compression');
     var fs = require('fs');
     var url = require('url');
-    var request = require('request');
-    var cors = require('cors')
+    var request = require('request'); 
 
     var gzipHeader = Buffer.from('1F8B08', 'hex');
 
@@ -52,21 +51,20 @@
     }, true);
 
     var app = express();
-    app.use(compression());
-    app.use(cors());
-    // app.use(function (req, res, next) { 
-    //     //res.header('Access-Control-Allow-Origin', '*');  
-    //     res.header('Access-Control-Allow-Origin', req.headers.origin);
-    //     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    //     res.header('Access-Control-Allow-Headers', 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type');
+    app.use(compression()); 
+    app.use(function (req, res, next) { 
+        //res.header('Access-Control-Allow-Origin', '*');  
+        res.header('Access-Control-Allow-Origin', req.headers.origin);
+        res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+        res.header('Access-Control-Allow-Headers', 'DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type');
 
-    //     if (req.method == 'OPTIONS') {
-    //         res.send(200); // 意思是，在正常的请求之前，会发送一个验证，是否可以请求。
-    //     }
-    //     else {
-    //         next();
-    //     }
-    // });
+        if (req.method == 'OPTIONS') {
+            res.send(200); // 意思是，在正常的请求之前，会发送一个验证，是否可以请求。
+        }
+        else {
+            next();
+        }
+    });
 
     function checkGzipAndNext(req, res, next) {
         var reqUrl = url.parse(req.url, true);
