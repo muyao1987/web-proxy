@@ -15,11 +15,11 @@
 ## 使用说明
   按命令运行启动后，打开浏览`http://localhost:1987/proxy/` 将该地址放在之前原有请求url前即可。
 
-比如原请求地址为：`http://www.google.cn/maps/vt?lyrs=s&x=0&y=0&z=0`  
-加代理后请求地址为：`http://localhost:1987/proxy/http://www.google.cn/maps/vt?lyrs=s&x=0&y=0&z=0`
+比如原请求地址为：`http://mt1.google.cn/vt/lyrs=s&x=0&y=0&z=0`  
+加代理后请求地址为：`http://localhost:1987/proxy/http://mt1.google.cn/vt/lyrs=s&x=0&y=0&z=0`
 
 ### 运行效果 
- [在线Demo](https://data.marsgis.cn/proxy/http://www.google.cn/maps/vt?lyrs=s&x=0&y=0&z=0)     
+ [在线Demo](https://data.marsgis.cn/proxy/http://mt1.google.cn/vt/lyrs=s&x=0&y=0&z=0)     
 
  
 
