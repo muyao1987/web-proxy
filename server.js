@@ -135,7 +135,7 @@
         }
 
         if (!remoteUrl) {
-            return res.status(400).send('No url specified.');
+            return res.status(400).send('请传入 url 参数，可参考：https://github.com/muyao1987/web-proxy');
         }
 
         if (!remoteUrl.protocol) {
