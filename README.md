@@ -35,20 +35,14 @@ var resource = new Cesium.Resource({
 
  
 ### Mars3D技术栈下 
- 在config.json或相关图层配置proxy属性即可
+ 在config.json或相关图层配置proxy属性即可，具体参考支持proxy属性的类的[API文档](http://mars3d.cn/api/BaseTileLayer.html)
 ```javascript 
-var imageryProvider = mars3d.layer.createImageryProvider({
-    type: "www_tdt",
-    layer: "img_d",
-    key: [
-        "313cd4b28ed520472e8b43de00b2de56",
-        "83b36ded6b43b9bc81fbf617c40b83b5",
-        "0ebd57f93a114d146a954da4ecae1e67",
-        "6c99c7793f41fccc4bd595b03711913e",
-        "56b81006f361f6406d0e940d2f89a39c"
-    ],
-    proxy: "http://data.marsgis.cn/proxy/",  //代理服务
-});
+  {
+        "name": "高德实时路况",
+        "type": "gaode",
+        "layer": "time",
+        "proxy": "http://data.marsgis.cn/proxy/"
+  }
 ```
 
 
