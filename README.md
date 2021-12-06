@@ -19,7 +19,7 @@
 加代理后请求地址为：`http://localhost:1987/proxy/http://mt1.google.cn/vt/lyrs=s&x=0&y=0&z=0`
 
 ### 运行效果 
- [在线Demo](https://data.marsgis.cn/proxy/http://mt1.google.cn/vt/lyrs=s&x=0&y=0&z=0)     
+ [在线Demo](https://server.mars3d.cn/proxy/http://mt1.google.cn/vt/lyrs=s&x=0&y=0&z=0)     
 
  
 
@@ -41,7 +41,7 @@ var resource = new Cesium.Resource({
         "name": "高德实时路况",
         "type": "gaode",
         "layer": "time",
-        "proxy": "http://data.marsgis.cn/proxy/"
+        "proxy": "http://localhost:1987/proxy/"
   }
 ```
 
