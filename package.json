@@ -1,6 +1,6 @@
 {
   "name": "web-proxy",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "web代理服务器，进行跨域处理解决",
   "main": "server.js",
   "keywords": [
@@ -31,6 +31,6 @@
     "name": "火星科技 木遥",
     "url": "http://www.marsgis.cn"
   },
-  "license": "ISC",
+  "license": "Apache-2.0",
   "homepage": "https://github.com/muyao1987/web-proxy"
 }
