@@ -174,7 +174,8 @@
     var remoteUrl = getRemoteUrlFromParam(req);
     if (!remoteUrl) {
       // look for request like http://localhost:8080/proxy/?http%3A%2F%2Fexample.com%2Ffile%3Fquery%3D1
-      remoteUrl = Object.keys(req.query)[0];
+      // remoteUrl = Object.keys(req.query)[0];
+      remoteUrl = req.originalUrl.split('?').slice(1).join('?')
       if (remoteUrl) {
         remoteUrl = url.parse(remoteUrl);
       }
