@@ -152,7 +152,7 @@
   }
   // const WHITE_LIST = [/marsgis|mars2d|mars3d/, /localhost|127\.0\.0\.1/];
   app.get("/proxy/*", function (req, res, next) {
-    const origin = req.get("origin");
+    // const origin = req.get("origin") || req.get("referer");
     // const hasAuth = WHITE_LIST.some((rule) => {
     //   if (typeof rule === "string") {
     //     return rule === origin;
