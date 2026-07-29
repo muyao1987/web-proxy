@@ -150,19 +150,21 @@
       bypassUpstreamProxyHosts[host.toLowerCase()] = true;
     });
   }
-  // const WHITE_LIST = [/marsgis|mars2d|mars3d/, /localhost|127\.0\.0\.1/];
+  const WHITE_LIST = [
+    /marsgis\.cn/,
+    /mars2d\.cn/,
+    /mars3d\.cn/,
+    /localhost/,
+    /127\.0\.0\.1/
+  ];
   app.get("/proxy/*", function (req, res, next) {
-    // const origin = req.get("origin") || req.get("referer");
+    const origin = req.get("origin") || req.get("referer") || "";
     // const hasAuth = WHITE_LIST.some((rule) => {
-    //   if (typeof rule === "string") {
-    //     return rule === origin;
-    //   } else {
-    //     return rule.test(origin);
-    //   }
+    //   return rule.test(origin);
     // });
 
+    // console.log(`origin:${origin},  hasAuth:${hasAuth}`);
     // if (!hasAuth) {
-    //   console.log("hasAuth-------------->", hasAuth);
     //   return res
     //     .status(403)
     //     .send(
